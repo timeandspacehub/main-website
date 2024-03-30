@@ -5,7 +5,7 @@ class HomeComponent extends Component {
     render() {
         return (
             <div>        
-                Welcome to Time and Space, your premier destination for cutting-edge IT solutions. 
+                <b>Welcome to Time and Space</b>, your premier destination for cutting-edge IT solutions. 
                 At Time and Space, we specialize in providing a wide array of services tailored to 
                 meet your business needs. From cloud computing solutions utilizing AWS to building 
                 dynamic and responsive web applications with React, and crafting robust backend 
