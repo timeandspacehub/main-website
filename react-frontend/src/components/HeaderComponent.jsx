@@ -1,43 +1,44 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import logo from '../images/logo.PNG';
 
-class HeaderComponent extends Component {
-    render() {
-        return (
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+const HeaderComponent = () => {
+    const [isOpen, setIsOpen] = useState(false);
 
+    const toggleMenu = () => {
+        setIsOpen(!isOpen);
+    };
 
-                <a href="/">
-                    <img src={logo} class="tshub-logo" alt="Logo"/>
-                </a>
-    
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
-                    aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-        
-                </button>
-        
-                <div class="menu-area menu-sticky" id="navbarTogglerDemo02">
-                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="/">Home <span class="sr-only"></span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/about">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/service">Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/contact">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        );
-    }
+    return (
+        <nav className="navbar navbar-expand-lg navbar-light bg-light tash-nav">
+            <a href="/">
+                <img src={logo} className="tshub-logo" alt="Logo" />
+            </a>
+
+            <button className="navbar-toggler" type="button" onClick={toggleMenu}>
+                <span className="navbar-toggler-icon"></span>
+            </button>
+
+            <div className={`collapse navbar-collapse ${isOpen ? 'show justify-content-end' : ''}`}>
+                <ul className="navbar-nav ml-auto mt-2 mt-lg-0" >
+                    <li className="nav-item active">
+                        <a className="nav-link" href="/">Home <span className="sr-only"></span></a>
+                    </li>
+                    <li className="nav-item">
+                        <a className="nav-link" href="/about">About</a>
+                    </li>
+                    <li className="nav-item">
+                        <a className="nav-link" href="/service">Services</a>
+                    </li>
+                    <li className="nav-item">
+                        <a className="nav-link" href="/contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    );
 }
 
 export default HeaderComponent;
