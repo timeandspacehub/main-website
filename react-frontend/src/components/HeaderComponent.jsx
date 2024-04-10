@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 import logo from '../images/logo.PNG';
 
-import { ArrowClockwise, ArrowRight, BookFill, BookHalf, Cloud, CloudFill, Envelope, EnvelopeFill, House, HouseExclamation, HouseFill, Mailbox, Phone, PhoneFill } from 'react-bootstrap-icons';
+import {BookFill, CloudFill,EnvelopeFill,HouseFill} from 'react-bootstrap-icons';
 
 const HeaderComponent = () => {
     const [isOpen, setIsOpen] = useState(false);
