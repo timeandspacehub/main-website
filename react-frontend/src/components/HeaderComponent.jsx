@@ -4,6 +4,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 import logo from '../images/logo.PNG';
 
+import { ArrowClockwise, ArrowRight, BookFill, BookHalf, Cloud, CloudFill, Envelope, EnvelopeFill, House, HouseExclamation, HouseFill, Mailbox, Phone, PhoneFill } from 'react-bootstrap-icons';
+
 const HeaderComponent = () => {
     const [isOpen, setIsOpen] = useState(false);
 
@@ -24,16 +26,16 @@ const HeaderComponent = () => {
             <div className={`collapse navbar-collapse ${isOpen ? 'show justify-content-end' : ''}`}>
                 <ul className="navbar-nav ml-auto mt-2 mt-lg-0" >
                     <li className="nav-item active">
-                        <a className="nav-link" href="/">Home <span className="sr-only"></span></a>
+                        <a className="nav-link" href="/"><HouseFill/> Home</a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="/about">About</a>
+                        <a className="nav-link" href="/about"><BookFill/> About</a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="/service">Services</a>
+                        <a className="nav-link" href="/service"><CloudFill/> Services</a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="/contact">Contact</a>
+                        <a className="nav-link" href="/contact"><EnvelopeFill/> Contact </a>
                     </li>
                 </ul>
             </div>
