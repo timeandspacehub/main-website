@@ -8,7 +8,7 @@ class FooterComponent extends Component {
                 <div className="text-center" style={{ fontSize: 'smaller',
                  paddingBottom: '10px', position:'fixed', width: '100%',  bottom:'0'
                  }}>
-                    Copyright ©  @{new Date().getFullYear()} Time and Space Hub LLC. All rights reserved.
+                    Copyright © {new Date().getFullYear()} Time and Space Hub LLC. All rights reserved.
                 </div>
             </footer>
         );
