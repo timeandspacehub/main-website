@@ -6,9 +6,7 @@ class AboutComponent extends Component {
         return (
             <div>        
                At Time and Space, we are passionate about technology and dedicated to delivering exceptional IT 
-               solutions to our clients. Founded with a vision to revolutionize the digital landscape, 
-               our company has quickly emerged as a trusted partner for businesses seeking innovative 
-               and reliable technology services. With a team of highly skilled professionals, 
+               solutions to our clients. With a team of highly skilled professionals, 
                we bring a wealth of experience in areas such as cloud computing, web development, 
                and software engineering. Our commitment to excellence drives us to stay at the forefront 
                of emerging technologies, enabling us to provide our clients with cutting-edge solutions 
